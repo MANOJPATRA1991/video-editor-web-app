@@ -23,14 +23,9 @@ export const useVideoEditor = (
     let videoBlockId: number;
 
     const create = async () => {
-      if (!cesdk) {
-        [editorInstance, videoBlockId] = await createEditor(
-          editorRef.current!,
-          cleanedUp
-        );
-        setCesdk(editorInstance);
-        setVideoBlockId(videoBlockId);
-      }
+      [editorInstance, videoBlockId] = await createEditor(editorRef.current!, cleanedUp);
+      setCesdk(editorInstance);
+      setVideoBlockId(videoBlockId);
     };
 
     create();
@@ -42,7 +37,7 @@ export const useVideoEditor = (
     };
 
     return cleanup;
-  }, [editorRef.current]);
+  }, [editorRef]);
 
   return { cesdk, videoBlockId };
 };

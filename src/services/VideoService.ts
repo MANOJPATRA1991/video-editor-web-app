@@ -31,7 +31,7 @@ const onExport = (blobs: Blob[], _: ExportOptions) => {
  */
 export const createEditor = async (
   editorElement: HTMLDivElement,
-  cleanedUp = false
+  cleanedUp: boolean = false
 ): Promise<[CreativeEditorSDK | null, number]> => {
   config.callbacks!.onExport = onExport;
   try {
