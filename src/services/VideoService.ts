@@ -49,7 +49,7 @@ export const createEditor = async (
 
     await Promise.all([
       editorInstance.addDefaultAssetSources(),
-      editorInstance.addDemoAssetSources({ sceneMode: "Design" }),
+      editorInstance.addDemoAssetSources({ sceneMode: "Video" }),
     ]);
     const videoBlockId = await editorInstance.createVideoScene();
 

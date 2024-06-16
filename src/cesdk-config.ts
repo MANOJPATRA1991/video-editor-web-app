@@ -21,6 +21,11 @@ export const config: Partial<_RequiredCreateConfiguration> = {
           export: true,
         },
       },
+      libraries: {
+        insert: {
+          backgroundTrackLibraryEntries: ['ly.img.image', 'ly.img.video']
+        }
+      }
     },
   },
 };
