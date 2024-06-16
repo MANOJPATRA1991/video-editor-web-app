@@ -1,5 +1,6 @@
-import CreativeEditorSDK, { ExportOptions } from "@cesdk/cesdk-js";
 import { config } from "@/cesdk-config";
+import type CreativeEditorSDK from "@cesdk/cesdk-js";
+import type { ExportOptions } from "@cesdk/cesdk-js";
 
 /**
  * Callback function triggered when exporting a video using CreativeEditorSDK.
@@ -35,6 +36,7 @@ export const createEditor = async (
 ): Promise<[CreativeEditorSDK | null, number]> => {
   config.callbacks!.onExport = onExport;
   try {
+    const CreativeEditorSDK = (await import("@cesdk/cesdk-js")).default;
     const editorInstance = await CreativeEditorSDK.create(
       editorElement,
       config
