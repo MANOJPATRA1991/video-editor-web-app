@@ -1,5 +1,5 @@
 import CreativeEditorSDK, { ExportOptions } from "@cesdk/cesdk-js";
-import { config } from "../cesdk-config";
+import { config } from "@/cesdk-config";
 
 /**
  * Callback function triggered when exporting a video using CreativeEditorSDK.

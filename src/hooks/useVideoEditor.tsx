@@ -1,6 +1,6 @@
 import CreativeEditorSDK from "@cesdk/cesdk-js";
 import { useEffect, useState, MutableRefObject } from "react";
-import { createEditor } from "../services/videoService";
+import { createEditor } from "@/services/VideoService";
 
 /**
  * Custom hook for managing the CreativeEditorSDK instance and video block ID in a React component.
