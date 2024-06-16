@@ -1,5 +1,6 @@
 import { useVideoEditor } from "@/hooks/useVideoEditor";
 import { useRef } from "react";
+import styles from './VideoEditor.module.css';
 
 export const VideoEditor = () => {
   const cesdk_container = useRef<HTMLDivElement | null>(null);
@@ -7,8 +8,8 @@ export const VideoEditor = () => {
   useVideoEditor(cesdk_container);
 
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
-      <div ref={cesdk_container} style={{ width: "100%", height: "100%" }} />
+    <div className={styles.cesdk}>
+      <div ref={cesdk_container} className={styles.container} />
     </div>
   );
 };
