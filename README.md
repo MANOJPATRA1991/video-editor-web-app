@@ -56,7 +56,12 @@ The application relies on the following dependencies:
 1. React
 2. Next.js
 3. CreativeEditorSDK: SDK for video editing functionalities such as trimming and exporting.
-  - [https://img.ly/docs/cesdk](https://img.ly/docs/cesdk)
+    - https://img.ly/docs/cesdk
+    - https://www.npmjs.com/package/@cesdk/cesdk-js
+
+## Live
+
+This project is live on https://video-editor-web-app.vercel.app/.
 
 ## License
 
