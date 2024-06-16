@@ -8,8 +8,12 @@ export const config: Partial<_RequiredCreateConfiguration> = {
   callbacks: {
     onUpload: "local",
   },
+  theme: "dark",
   ui: {
     elements: {
+      panels: {
+        settings: true,
+      },
       navigation: {
         action: {
           download: true,
