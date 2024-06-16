@@ -1,5 +1,7 @@
 # Video Editor Application
 
+![](https://imgur.com/BF6VKCd.png)
+
 This is a video editor application built using React, Next.js and CreativeEditorSDK (CESDK). The application allows users to edit videos and exporting the edited video.
 
 ## Folder Structure
